@@ -1,9 +1,9 @@
 # encoding: utf-8
 
 module Beer
-  EMOJI = "🍺 "
-  DOUBLE_EMOJI = "🍻 "
-  ERROR = "🚨  🚔  🚔  🚔  🚨 "
+  EMOJI = " "
+  DOUBLE_EMOJI = " "
+  ERROR = "         "
 end
 
 class Fixnum
@@ -62,7 +62,7 @@ end
 
 class Random
   def self.beers(amount = 100)
-    rand(amount).beers
+    (rand(amount) + 1).beers
   end
 end
 
